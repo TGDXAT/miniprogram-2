@@ -12,15 +12,16 @@ Page({
   //页面的初始数据
   data: {
     region:['山东省','青岛市','崂山区'],
+    //https://dev.qweather.com/docs/api/weather/weather-now/
     now:{
-      temp:0,
-      text:"未知",
-      icon:999,
-      humidity:0,
-      pressure:0,
-      windDir:0,
-      windSpeed:0,
-      windScale:0
+      temp:0,//温度，默认单位：摄氏度
+      text:"未知",//天气状况的文字描述，包括阴晴雨雪等天气状态的描述
+      icon:999,//天气状况和图标的代码
+      humidity:0,//相对湿度，百分比数值
+      pressure:0,//大气压强，默认单位：百帕
+      windDir:0,//风向
+      windSpeed:0,//风速，公里/小时
+      windScale:0//风力等级
     }
   },
 
